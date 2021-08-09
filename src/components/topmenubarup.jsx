@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import SearchCoursesMenubar from './searchcoursesmenubar'
-import {Heart} from '@styled-icons/boxicons-regular/Heart'
-import {ShoppingCartOutline} from '@styled-icons/evaicons-outline/ShoppingCartOutline'
-import {Bell} from '@styled-icons/boxicons-regular/Bell'
+import { Heart } from '@styled-icons/boxicons-regular/Heart'
+import { ShoppingCartOutline } from '@styled-icons/evaicons-outline/ShoppingCartOutline'
+import { Bell } from '@styled-icons/boxicons-regular/Bell'
 
 
 const TopMenuBarUpWrapper = styled.div`
@@ -21,11 +21,12 @@ const TopMenuBarLogo = styled.img`
 `
 
 const TopMenuBarItem = styled.a`
+    white-space: nowrap;
     color:#1c1d1f;
     font-weight: 400;
     line-height: 1.4;
     font-size: 1.4rem;
-    margin: 0px 12px;
+    margin: auto 12px;
     &:hover {
     color: #5624D0; // <Thing> when hovered
   }
@@ -35,16 +36,25 @@ const TopMenuBarItem = styled.a`
 const MenuHeart = styled(Heart)`
     height: 24px;
     margin: 0px 12px;
+    &:hover {
+    color: #5624D0; // <Thing> when hovered
+  }
 `
 
 const MenuShoppingCartOutline = styled(ShoppingCartOutline)`
     height: 24px;
     margin: 0px 12px;
+    &:hover {
+    color: #5624D0; // <Thing> when hovered
+  }
 `
 
 const MenuBell = styled(Bell)`
     height: 24px;
     margin: 0px 12px;
+    &:hover {
+    color: #5624D0; // <Thing> when hovered
+  }
 `
 
 const UserCircleButton = styled.div`
@@ -62,15 +72,22 @@ const UserCircleButton = styled.div`
 
 `
 
+const ShrinkOptions = styled.div`
+    overflow: hidden;   
+    flex: 1;
+`
+
 export default function TopMenubarUp() {
     return (
         <TopMenuBarUpWrapper>
             <TopMenuBarLogo src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"></TopMenuBarLogo>
             <TopMenuBarItem>Categorias</TopMenuBarItem>
             <SearchCoursesMenubar></SearchCoursesMenubar>
-            <TopMenuBarItem>Udemy Business</TopMenuBarItem>
-            <TopMenuBarItem>Ensine na Udemy</TopMenuBarItem>
-            <TopMenuBarItem>Meu Aprendizado</TopMenuBarItem>
+            <ShrinkOptions>
+                <TopMenuBarItem>Udemy Business</TopMenuBarItem>
+                <TopMenuBarItem>Ensine na Udemy</TopMenuBarItem>
+                <TopMenuBarItem>Meu Aprendizado</TopMenuBarItem>
+            </ShrinkOptions>
             <MenuHeart></MenuHeart>
             <MenuShoppingCartOutline></MenuShoppingCartOutline>
             <MenuBell></MenuBell>
