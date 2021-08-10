@@ -19,6 +19,7 @@ position: absolute;
 left: 4.8rem;
 top: 6.4rem;
 max-width: 44rem;
+box-shadow: rgba(0, 0, 0, 0.452)  2px 2px 5px;
 `
 
 const TitleInformationBanner = styled.h1`
@@ -37,9 +38,14 @@ font-size: 1.6rem;
 
 `
 const SearchBanner = styled.div`
-width: 30px;
-height: 30px;
-background-color: blue;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 340px;
+    height: 4.8rem;
+    border: 1px solid #1c1d1f;
+    background-color: #f7f9fa;
+    margin: 0 1.2rem;
 `
 
 export default function MainBanner(){
@@ -49,6 +55,7 @@ export default function MainBanner(){
                 <TitleInformationBanner>
                     Cursos a partir de R$22,90 cada
                     <TextInformationBanner><p>Aproveite a promoção Amor ao aprendizado até 18 de agosto para comprar os principais cursos por menos.</p></TextInformationBanner>
+                    <SearchBanner placeholder="O que você quer aprender?"> </SearchBanner>
                 </TitleInformationBanner>               
             </InformationBanner>           
         </BackgroundWrapper>

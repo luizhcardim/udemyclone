@@ -4,15 +4,15 @@ import {Search} from '@styled-icons/boxicons-regular/Search'
 
 
 const SearchCoursesMenubarWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    flex: 1;
-    min-width: 18rem;
-    height: 4.8rem;
-    border: 1px solid #1c1d1f;
-    border-radius: 9999px;
-    background-color: #f7f9fa;
-    margin: 0 1.2rem;
+display: flex;
+align-items: center;
+flex: 1;
+min-width: 18rem;
+height: 4.8rem;
+border: 1px solid #1c1d1f;
+border-radius: 9999px;
+background-color: #f7f9fa;
+margin: 0 1.2rem;
 `
 
 const SearchIcon = styled(Search)`
