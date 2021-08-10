@@ -80,7 +80,7 @@ const ShrinkOptions = styled.div`
 export default function TopMenubarUp() {
     return (
         <TopMenuBarUpWrapper>
-            <TopMenuBarLogo src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"></TopMenuBarLogo>
+            <TopMenuBarLogo src="logo-courses.svg"></TopMenuBarLogo>
             <TopMenuBarItem>Categorias</TopMenuBarItem>
             <SearchCoursesMenubar></SearchCoursesMenubar>
             <ShrinkOptions>
