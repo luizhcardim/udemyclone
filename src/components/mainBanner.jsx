@@ -1,6 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Search} from '@styled-icons/boxicons-regular/Search'
+/*
+- Alguns estilos estão duplicados, verificar a possibilidade de herança nesses casos.
+- Remover margin do search banner e width deve ser 100%.
+- colocar dois elementos dentro do search banner (um pro icon e outro pra input)
+- placeholder deve ser aplicado sobre um elemento input.
+- Remover line-height de TitleInformationBanner
+*/
 
 
 
@@ -31,7 +38,6 @@ padding-top: 5px;
 font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 font-weight: 700;
 font-size: 3.8rem;
-line-height: 1.25;
 letter-spacing: -.05rem;
 `
 const TextInformationBanner = styled.p`
