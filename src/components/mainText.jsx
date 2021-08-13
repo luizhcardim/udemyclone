@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 
 
-
 const titleText = styled.h1`
 font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 font-weight: 700;
@@ -20,6 +19,7 @@ line-height: 1.4;
 font-size: 1.9rem;
 
 `
+
 
 export default function MainText(){
     return(

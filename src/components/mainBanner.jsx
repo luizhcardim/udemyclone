@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Search} from '@styled-icons/boxicons-regular/Search'
+
 
 
 const BackgroundWrapper = styled.div`
@@ -47,22 +49,28 @@ min-width: 18rem;
 height: 4.8rem;
 border: 1px solid #1c1d1f;
 background-color: #f7f9fa;
-margin: 0 1.2rem;
 font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 font-weight: 400;
 line-height: 1.4;
 font-size: 1.6rem;
-color: #969696;
+color: black;
 padding-left: 10px;
-
+/*width: 100%;*/
 `
-const SearchBannerIcon = styled.div`
+const SearchBannerIcon = styled(Search)`
     height: 20px;
     min-width: 20px;
     margin: 0px 12px;
 
 `
-
+const SearchBannerInput = styled.input`
+    flex:1;
+    background: transparent;
+    border: 0px;
+    height: 100%;
+    outline: none;
+    overflow: hidden;
+`
 
 export default function MainBanner(){
     return (
@@ -72,10 +80,11 @@ export default function MainBanner(){
                     Cursos a partir de R$22,90 cada
                     <TextInformationBanner><p>Aproveite a promoção Amor ao aprendizado até 18 de 
                         agosto para comprar os principais cursos por menos.</p></TextInformationBanner>
-                    <SearchBanner>                      
-
-                        O que você quer aprender?
-                        <SearchBannerIcon></SearchBannerIcon>
+                    <SearchBanner>                        
+                        <SearchBannerInput placeholder="O que você quer aprender?"></SearchBannerInput>
+                        <SearchBannerIcon></SearchBannerIcon>             
+                     
+                       
                     </SearchBanner>
 
                 </TitleInformationBanner>               
